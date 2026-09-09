@@ -1,0 +1,252 @@
+.resume-builder-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-builder-content {
+  width: 100%;
+  flex: 1;
+
+  padding: 80px 40px;
+}
+
+.resume-builder-heading {
+  width: 100%;
+
+  margin: 0 0 70px;
+
+  text-align: center;
+
+  font-size: clamp(3rem, 5vw, 4.5rem);
+
+  font-weight: 400;
+
+  color: #25254d;
+
+  line-height: 1.2;
+}
+
+
+/* Steps */
+
+.resume-steps {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 50px;
+}
+
+
+/* Step Card */
+
+.resume-step-card {
+  flex: 1;
+
+  min-width: 0;
+
+  min-height: 280px;
+
+  padding: 45px 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e0e0e0;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.resume-step-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Icons */
+
+.step-icon {
+  width: 75px;
+  height: 75px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #f3e6f2;
+
+  color: #9c0f91;
+}
+
+.step-icon svg {
+  font-size: 42px;
+}
+
+
+/* Step Content */
+
+.step-number {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  color: #9c0f91;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.step-content h2 {
+  margin: 0 0 12px;
+
+  font-size: clamp(1.7rem, 2.5vw, 2.2rem);
+
+  font-weight: 400;
+
+  color: #25254d;
+}
+
+.step-content p {
+  margin: 0 auto;
+
+  max-width: 430px;
+
+  font-size: 1rem;
+
+  line-height: 1.6;
+
+  color: #666;
+}
+
+
+/* Get Started */
+
+.get-started-container {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 45px;
+}
+
+.get-started-button {
+  padding: 14px 35px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background-color: #9c0f91;
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #7d0b74;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+  .resume-builder-content {
+    padding: 65px 30px;
+  }
+
+  .resume-builder-heading {
+    margin-bottom: 50px;
+  }
+
+  .resume-steps {
+    gap: 30px;
+  }
+
+  .resume-step-card {
+    padding: 35px 25px;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .resume-builder-content {
+    padding: 50px 20px;
+  }
+
+  .resume-builder-heading {
+    margin-bottom: 40px;
+
+    font-size: 3rem;
+  }
+
+  .resume-steps {
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .resume-step-card {
+    width: 100%;
+
+    min-height: 250px;
+  }
+
+  .get-started-container {
+    margin-top: 35px;
+  }
+
+}
